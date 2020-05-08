@@ -9,5 +9,16 @@
         android:id="@+id/blankFragment"
         android:name="jp.shiita.dialogfragmenttest.BlankFragment"
         android:label="blank"
-        tools:layout="@layout/fragment_blank" />
+        tools:layout="@layout/fragment_blank">
+
+        <action
+            android:id="@+id/action_blank_fragment_to_custom_dialog_fragment"
+            app:destination="@id/customDialogFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/customDialogFragment"
+        android:name="jp.shiita.dialogfragmenttest.CustomDialogFragment"
+        android:label="dialog"
+        tools:layout="@layout/dialog_custom" />
 </navigation>
